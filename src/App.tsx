@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { store, persistor } from "./store/store.ts";
 import MainRouter from "./Routes/index.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
@@ -17,6 +18,7 @@ const App = () => (
           <Sonner />
           <AuthDialog />
           <MainRouter />
+          <SpeedInsights />
         </BrowserRouter>
       </TooltipProvider>
     </PersistGate>
