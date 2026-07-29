@@ -1,5 +1,4 @@
 import { ArrowRight, Star } from "lucide-react";
-import heroImage from "@/assets/hero-model.webp";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { Link } from "react-router-dom";
 
@@ -23,15 +22,15 @@ const HeroSection = () => {
       />
 
       <div className="absolute right-0 top-0 bottom-0 w-full md:w-3/5 h-full z-0">
-        <img
-          src={heroImage}
-          alt="Luxury fashion model wearing Bambotia jewellery"
-          className="w-full h-full object-cover object-center md:object-top"
-          width={1024}
-          height={1280}
-          loading="eager"
-          decoding="async"
-        />
+      <img
+       src="https://res.cloudinary.com/dixuhzvtn/image/upload/v1785353661/hero-model_zhqvx0.webp"
+       alt="Luxury fashion model wearing Bambotia jewellery"
+       className="w-full h-full object-cover object-center md:object-top"
+       width={1024}
+       height={1280}
+       loading="eager"
+       decoding="async"
+      />
 
         <div
           className="absolute inset-0 z-1 md:hidden pointer-events-none"
